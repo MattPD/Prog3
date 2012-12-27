@@ -4,6 +4,6 @@
 #include <string>
 
 int main(int argc, char *argv[]){
-	copy(argv+1, argv+argc,
+	std::copy(argv+1, argv+argc,
 	     std::ostream_iterator<std::string>{std::cout,"-"});
 }
